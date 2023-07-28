@@ -7,5 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1",
+    "next-auth": "^4.22.3"
   }
 }
