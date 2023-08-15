@@ -25,16 +25,13 @@ const handler = NextAuth({
       try {
         await connectToDB();
 
-        // console.log("checking if user exists:", profile);
         // check if user already exists
         const userExists = await User.findOne({
           email: profile.email,
         });
 
-        // console.log("user exists:", userExists);
         // if not, create a new document and save user in MongoDB
         if (!userExists) {
-          // console.log("creating user...");
           await User.create({
             email: profile.email,
             username: profile.given_name
@@ -42,12 +39,11 @@ const handler = NextAuth({
               .toLowerCase(),
             image: profile.picture,
           });
-          // console.log("user created!");
         }
 
         return true;
       } catch (error) {
-        // console.log("Error checking if user exists, ", error.message);
+        console.log("Error checking if user exists, ", error.message);
         return false;
       }
     },
