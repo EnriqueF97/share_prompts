@@ -31,8 +31,8 @@ const Nav = () => {
         <Image
           src="/assets/images/logo-color.svg"
           alt="logo"
-          width={30}
-          height={30}
+          width={40}
+          height={40}
           className="object-contain rounded-2xl"
         />
         <p className="logo_text">SharePrompts</p>
