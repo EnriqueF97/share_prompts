@@ -15,7 +15,7 @@ const Home = () => (
       used on ChatGPT & Google Bard from other users, create your own
       and share them with other users from all the world!
     </p>
-    <p className="text-center desc">
+    <p className="text-center desc text-blue-600">
       This is a work in progress, search functionality is coming!
     </p>
     <p className="text-center desc">Enrique Favila, Aug 2023</p>
